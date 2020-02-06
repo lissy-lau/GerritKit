@@ -652,8 +652,6 @@ def main_console(args):
 
 def main():
 
-    print "ROOT DIR: " + ROOT_DIR
-
     try:
         os.mkdir(ROOT_DIR)
     except OSError:
