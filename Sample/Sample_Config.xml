@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Configuration>
+
+	<Servers>
+
+		<Server Name="Gerrit (SSH)" Port="29418" Type="1" URL="gerrit-review.googlesource.com" Version="3.1"/>
+
+		<Server Name="Gerrit (REST)" Port="443" Type="2" URL="gerrit-review.googlesource.com" Version="3.1">
+
+			<Login AuthType="3" Password="git-user.email.com=1//0ftO8zQyk2PCkCgYIARAAGA8SNwF" Username="o"/>
+
+			<Labels>
+
+				<Label Name="Verified"/>
+
+				<Label Name="Code-Style"/>
+
+				<Label Name="Library-Compliance"/>
+
+				<Label Name="Code-Review"/>
+
+			</Labels>
+
+		</Server>
+
+		<Server Name="Chromium (SSH)" Port="29418" Type="1" URL="chromium-review.googlesource.com" Version="3.1"/>
+
+		<Server Name="Chromium (REST)" Port="443" Type="2" URL="chromium-review.googlesource.com" Version="3.1">
+
+			<Login AuthType="3" Password="git-user.email.com=1//0f4Un3dj_EfU1CgYIARAAGA8SNwF" Username="o"/>
+
+			<Labels>
+
+				<Label Name="Commit-Queue"/>
+
+				<Label Name="Verified"/>
+
+				<Label Name="Code-Review"/>
+
+			</Labels>
+
+		</Server>
+
+		<Server Name="OpenDev (SSH)" Port="29418" Type="1" URL="review.opendev.org" Version="2.13">
+
+			<Login AuthType="0" Password="" Username="<USER>"/>
+
+			<Labels>
+
+				<Label Name="Verified"/>
+
+				<Label Name="Code-Review"/>
+
+				<Label Name="Workflow"/>
+
+			</Labels>
+
+		</Server>
+
+		<Server Name="OpenDev (REST)" Port="443" Type="2" URL="review.opendev.org" Version="2.13">
+
+			<Login AuthType="2" Password="<HTTP-PASSWORD>" Username="<USER>"/>
+
+			<Labels>
+
+				<Label Name="Verified"/>
+
+				<Label Name="Code-Review"/>
+
+				<Label Name="Workflow"/>
+
+			</Labels>
+
+		</Server>
+
+		<Server Name="WikiMedia (SSH)" Port="29418" Type="1" URL="gerrit.wikimedia.org" Version="2.15">
+
+			<Login AuthType="0" Password="" Username="<USER>"/>
+
+			<Labels>
+
+				<Label Name="Verified"/>
+
+				<Label Name="Code-Review"/>
+
+			</Labels>
+
+		</Server>
+
+		<Server Name="WikiMedia (REST)" Port="443" Type="2" URL="gerrit.wikimedia.org" Version="2.15">
+
+			<Login AuthType="1" Password="<HTTP-PASSWORD>" Username="<USER>"/>
+
+		</Server>
+
+		<Server Name="Qt (SSH)" Port="29418" Type="1" URL="codereview.qt-project.org" Version="3.0">
+
+			<Login AuthType="0" Password="" Username="<USER>"/>
+
+			<Labels>
+
+				<Label Name="Code-Review"/>
+
+				<Label Name="Sanity-Review"/>
+
+			</Labels>
+
+		</Server>
+
+		<Server Name="Qt (REST)" Port="443" Type="2" URL="codereview.qt-project.org" Version="3.0">
+
+			<Login AuthType="1" Password="<HTTP-PASSWORD>" Username="<USER>"/>
+
+			<Labels>
+
+				<Label Name="Sanity-Review"/>
+
+				<Label Name="Code-Review"/>
+
+			</Labels>
+
+		</Server>
+
+	</Servers>
+
+	<Display>
+
+		<Columns>
+
+			<Column Display="1" Name="ID" Width="50"/>
+
+			<Column Display="1" Name="Subject" Width="100"/>
+
+			<Column Display="1" Name="Owner" Width="50"/>
+
+			<Column Display="0" Name="Author" Width="50"/>
+
+			<Column Display="0" Name="Committer" Width="50"/>
+
+			<Column Display="1" Name="Status" Width="50"/>
+
+			<Column Display="1" Name="Project" Width="100"/>
+
+			<Column Display="1" Name="Branch" Width="100"/>
+
+			<Column Display="0" Name="Created-On" Width="100"/>
+
+			<Column Display="1" Name="Updated-On" Width="100"/>
+
+			<Column Display="0" Name="Topic" Width="100"/>
+
+			<Column Display="0" Name="Insertions" Width="50"/>
+
+			<Column Display="0" Name="Deletions" Width="50"/>
+
+		</Columns>
+
+		<Labels>
+
+			<Label Display="1" Name="Verified" Width="50"/>
+
+			<Label Display="1" Name="Code-Review" Width="50"/>
+
+		</Labels>
+
+	</Display>
+
+	<Preferences>
+
+		<Logging BackupCount="3" FileName="gerrit.log" MaxSize="2097152" Rotation="1"/>
+
+	</Preferences>
+
+</Configuration>

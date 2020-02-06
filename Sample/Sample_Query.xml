@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Query Name="QT Test" Server="Qt (SSH)">
+
+	<Filters>
+
+		<Filter Name="status" Value="open"/>
+
+		<Filter Name="limit" Value="20"/>
+
+	</Filters>
+
+	<Columns>
+
+		<Column Display="1" Name="ID" Width="50"/>
+
+		<Column Display="1" Name="Subject" Width="100"/>
+
+		<Column Display="1" Name="Owner" Width="50"/>
+
+		<Column Display="0" Name="Author" Width="50"/>
+
+		<Column Display="0" Name="Committer" Width="50"/>
+
+		<Column Display="1" Name="Status" Width="50"/>
+
+		<Column Display="1" Name="Project" Width="100"/>
+
+		<Column Display="1" Name="Branch" Width="100"/>
+
+		<Column Display="0" Name="Created-On" Width="100"/>
+
+		<Column Display="1" Name="Updated-On" Width="100"/>
+
+		<Column Display="0" Name="Topic" Width="100"/>
+
+		<Column Display="0" Name="Insertions" Width="50"/>
+
+		<Column Display="0" Name="Deletions" Width="50"/>
+
+		<Column Display="1" Name="Code-Review" Width="100"/>
+
+		<Column Display="1" Name="Sanity-Review" Width="100"/>
+
+	</Columns>
+
+</Query>
